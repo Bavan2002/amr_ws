@@ -1,5 +1,8 @@
 pyserial-miniterm -e /dev/ttyUSB0 57600
 
+sudo usermod -aG dialout $USER
+
+
 source install/setup.bash
 ros2 launch my_bot launch_robot_sim.launch.py \
 world:=./src/my_bot/worlds/room2.world
