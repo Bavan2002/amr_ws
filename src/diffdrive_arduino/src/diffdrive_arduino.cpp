@@ -107,7 +107,7 @@ hardware_interface::return_type DiffDriveArduino::read(
 
   arduino_.readEncoderValues(l_wheel_.enc, r_wheel_.enc);
 
-  RCLCPP_INFO(logger_, "Left PWM: %d, Right PWM: %d", l_wheel_.enc,  r_wheel_.enc);
+  RCLCPP_INFO(logger_, "Left enc: %d, Right enc: %d", l_wheel_.enc,  r_wheel_.enc);
 
   double pos_prev = l_wheel_.pos;
   l_wheel_.pos = l_wheel_.calcEncAngle();
@@ -145,7 +145,7 @@ hardware_interface::return_type DiffDriveArduino::write(
   int left_pwm = l_wheel_.cmd/ l_wheel_.rads_per_count /cfg_.loop_rate;
   int right_pwm = r_wheel_.cmd/ r_wheel_.rads_per_count /cfg_.loop_rate;
 
-  // RCLCPP_INFO(logger_, "Left PWM: %d, Right PWM: %d", left_pwm, right_pwm);
+  RCLCPP_INFO(logger_, "Left PWM: %d, Right PWM: %d", left_pwm, right_pwm);
 
   arduino_.setMotorValues(left_pwm, right_pwm);
   // RCLCPP_INFO(logger_, "Wriiten");
