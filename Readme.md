@@ -26,6 +26,9 @@ ros2 launch my_bot localization_launch.py map:=my_map1.yaml
 source install/setup.bash
 ros2 launch my_bot navigation_launch.py map_subscribe_transient_local:=true
 
+source install/setup.bash
+ros2 run initial_pose_handler initial_pose_handler
+
 225/20 = 11.25
 
 
