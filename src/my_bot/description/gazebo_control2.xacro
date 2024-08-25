@@ -17,8 +17,8 @@
 
 
             <!-- Output --> 
-            <odometry_topic>odom</odometry_topic>    <!-- Changed from odom3-->
-            <odometry_frame>odom</odometry_frame>      <!-- Changed from odom3-->
+            <odometry_topic>odom3</odometry_topic>    <!-- Changed from odom3-->
+            <odometry_frame>odom3</odometry_frame>      <!-- Changed from odom3-->
             <robot_base_frame>base_link</robot_base_frame>
 
             <publish_odom>false</publish_odom>

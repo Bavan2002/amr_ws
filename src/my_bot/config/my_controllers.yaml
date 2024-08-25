@@ -23,6 +23,7 @@ diff_cont:
 
     use_stamped_vel: false
 
+    odom_frame_id : map
 
     # open_loop: false    
 
