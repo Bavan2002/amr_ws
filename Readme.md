@@ -8,6 +8,9 @@ ros2 launch my_bot launch_robot_sim.launch.py \
 world:=./src/my_bot/worlds/room2.world
 
 source install/setup.bash
+ros2 launch my_bot launch_robot.launch.py
+
+source install/setup.bash
 ros2 run rviz2 rviz2 -d src/my_bot/config/main.rviz \
 --ros-args -p use_sim_time:=true
 
