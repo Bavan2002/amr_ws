@@ -159,7 +159,7 @@ controller_server:
       vx_samples: 50  #20
       vy_samples: 10  #5
       vtheta_samples: 50  #20
-      sim_time: 1.0 #1.7
+      sim_time: 1.7 #1.7
       linear_granularity: 0.05
       angular_granularity: 0.025
       transform_tolerance: 5.0   #2.0 #Changed from 0.2
@@ -183,7 +183,7 @@ local_costmap:
   local_costmap:
     ros__parameters:
       update_frequency: 5.0
-      publish_frequency: 2.0
+      publish_frequency: 3.0
       global_frame: map #odom
       robot_base_frame: base_link
       use_sim_time: True
@@ -195,7 +195,7 @@ local_costmap:
       plugins: ["voxel_layer", "inflation_layer"]
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
-        cost_scaling_factor: 3.0
+        cost_scaling_factor: 2.0
         inflation_radius: 0.55
       voxel_layer:
         plugin: "nav2_costmap_2d::VoxelLayer"
@@ -230,7 +230,7 @@ global_costmap:
       global_frame: map
       robot_base_frame: base_link
       use_sim_time: True
-      robot_radius: 0.22
+      robot_radius: 0.1
       resolution: 0.05
       track_unknown_space: true
       plugins: ["static_layer", "obstacle_layer", "inflation_layer"]
@@ -253,8 +253,8 @@ global_costmap:
         map_subscribe_transient_local: True
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
-        cost_scaling_factor: 3.0
-        inflation_radius: 0.5   #0.55
+        cost_scaling_factor: 2.0
+        inflation_radius: 0.4   #0.55
       always_send_full_costmap: True
 
 map_server:
@@ -313,7 +313,7 @@ behavior_server:
     robot_base_frame: base_link
     transform_tolerance: 5.0   # 0.1
     use_sim_time: true
-    simulate_ahead_time: 2.0 
+    simulate_ahead_time: 2.0  #2.0
     max_rotational_vel: 0.25 # 1.0
     min_rotational_vel: 0.1  # 0.4
     rotational_acc_lim: 2.0  #3.2

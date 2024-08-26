@@ -2,6 +2,16 @@ pyserial-miniterm -e /dev/ttyUSB0 57600
 
 sudo usermod -aG dialout $USER
 
+int Kp = 13;
+int Kd = 7;
+int Ki = 0;
+int Ko = 1;
+
+int Kp2 = 20;
+int Kd2 = 9;
+int Ki2 = 0;
+int Ko2 = 1;
+
 
 source install/setup.bash
 ros2 launch my_bot launch_robot_sim.launch.py \
