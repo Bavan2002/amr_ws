@@ -1,6 +1,4 @@
-Install These Packages
+**Automatic Mobile Robot Controller**
 
-sudo apt install ros-humble-navigation2 ros-humble-nav2-bringup \ 
-ros-humble-twist-mux ros-humble-turtlebot3* ros-humble-gazebo-ros-pkgs \
-ros-humble-xacro ros-humble-ros2-control ros-humble-ros2-controllers ros-humble-gazebo-ros2-control 
-ros-humble-gazebo-ros2-pkgs
+An autonoumus mobile robot for mapping and navihation. Used slam-toolbox for SLAM and Nav2 stack for navigation. ROS2 Humble distribution was used as the framework for this project.
+
