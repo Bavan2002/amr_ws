@@ -75,9 +75,13 @@ The custom motor driver PCB was designed to control two DC motors independently,
 
 #### PCB Views
 
-![PCB Top View](docs/design_document/pics/_page_12_Picture_5.jpeg)
+![Routed PCB Design](docs/design_document/pics/_page_7_Picture_5.jpeg)
 
-![PCB Bottom View](docs/design_document/pics/_page_12_Picture_8.jpeg)
+![Bare PCB Front View](docs/design_document/pics/_page_9_Picture_0.jpeg)
+
+![Bare PCB Rear View](docs/design_document/pics/_page_9_Picture_2.jpeg)
+
+![Soldered PCB](docs/design_document/pics/_page_9_Picture_4.jpeg)
 
 **Component Selection:**
 - **ICs:** MC33886 H-bridge motor drivers
@@ -104,15 +108,19 @@ The mechanical platform provides a stable base for the AMR system with considera
 
 #### Motor Driver Enclosure
 
-![Enclosure Design](docs/design_methdology/pics/_page_37_Picture_1.jpeg)
+![Enclosure Design](docs/design_document/pics/_page_20_Figure_0.jpeg)
 
-![Enclosure Assembly](docs/design_methdology/pics/_page_37_Picture_4.jpeg)
+![Enclosure Assembly](docs/design_document/pics/_page_21_Figure_0.jpeg)
 
 The enclosure design protects the PCB while providing thermal management and accessibility for connections.
 
 #### 3D Printed Components
 
-![3D Printed Enclosure](docs/design_methdology/pics/_page_44_Picture_1.jpeg)
+![Mold Design](docs/design_methdology/pics/_page_44_Picture_1.jpeg)
+
+![Enclosure Bottom Part](docs/design_methdology/pics/_page_37_Picture_1.jpeg)
+
+![Enclosure Assembly](docs/design_methdology/pics/_page_37_Picture_4.jpeg)
 
 ---
 
@@ -169,7 +177,9 @@ The enclosure design protects the PCB while providing thermal management and acc
 
 ### Simulation Environment
 
-![Gazebo Simulation](docs/design_methdology/pics/_page_31_Picture_3.jpeg)
+![Gazebo Simulation World](docs/design_methdology/pics/_page_31_Picture_3.jpeg)
+
+![Gazebo Simulation](docs/design_document/pics/_page_129_Figure_4.jpeg)
 
 The robot model was developed and tested in Gazebo simulation before hardware implementation. The simulation environment includes:
 
@@ -204,7 +214,9 @@ The system was tested in two different simulated environments to validate SLAM p
 
 #### Room 1 Mapping
 
-![Room 1 Map](docs/design_document/pics/_page_132_Picture_0.jpeg)
+![Room 1 Gazebo Environment](docs/design_document/pics/_page_124_Picture_5.jpeg)
+
+![Room 1 RViz Map](docs/design_document/pics/_page_125_Picture_0.jpeg)
 
 **Environment Characteristics:**
 - Rectangular room with obstacles
@@ -213,7 +225,9 @@ The system was tested in two different simulated environments to validate SLAM p
 
 #### Room 2 Mapping
 
-![Room 2 Map](docs/design_document/pics/_page_134_Picture_0.jpeg)
+![Room 2 Gazebo Environment](docs/design_document/pics/_page_126_Picture_0.jpeg)
+
+![Room 2 RViz Map](docs/design_document/pics/_page_126_Picture_2.jpeg)
 
 **Environment Characteristics:**
 - More complex layout
@@ -222,7 +236,9 @@ The system was tested in two different simulated environments to validate SLAM p
 
 ### Navigation Performance
 
-![Navigation Visualization](docs/design_document/pics/_page_135_Picture_0.jpeg)
+![Navigation While Mapping](docs/design_document/pics/_page_132_Picture_0.jpeg)
+
+![2D Goal Selection for Navigation](docs/design_document/pics/_page_135_Picture_0.jpeg)
 
 The Nav2 stack successfully demonstrated:
 - Autonomous goal-seeking behavior
